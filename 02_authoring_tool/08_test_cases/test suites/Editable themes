@@ -99,3 +99,16 @@ Test that presets can be saved and reused
 ### Expected result
 
 *   The restore preset button should only appear when a variable has been altered and is not visible by default
+
+7 - Upload an asset as part of your theme
+---------------------
+
+Ensures that a logo shows as a variable in the editable theme 
+
+### Test steps
+
+1.  Navigate to 'Theme picker' and select 'Single Asset Theme' from the dropdown menu
+2.  You should see an option to add a logo image, select this option and upload a new image that is not currently used in any courses
+3.  Save and preview your course
+4.  Your images should display in the top left corner
+
