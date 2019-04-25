@@ -152,10 +152,7 @@ Tests to make sure the custom LESS field takes priority over the editable themes
 6. Go back into the Theme picker and hover over the tooltip for one of the variables, make a note of its name
 7. Navigate back to the custom LESS/CSS and change it by entering the following
 
-.[name-of-variable] {
-  background-color: #00ffff;
-  color: #ff00ff;
-}
+@[name-of-var]: color: #ff00ff;
 
 ### Expected result
 
