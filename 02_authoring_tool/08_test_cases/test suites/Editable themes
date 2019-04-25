@@ -1,7 +1,7 @@
 Editable Themes
 ===============================
 
-**Number of test cases:** 6
+**Number of test cases:** 8
 
 1 - User is able to use theme variables
 -----------------------------------
@@ -114,3 +114,49 @@ Ensures that the asset shows as a variable in the editable theme
 3.  Save and preview your course
 4.  Your images should display when previewing the course
 
+
+8 - User is able to preview a course which does not have an editable theme
+---------------------
+
+Ensures that preview works on editable and non-editable courses
+
+### Test steps
+
+1.  Navigate to 'Theme picker' and select a theme which is editable
+2.  Save and ensure you can preview the course
+1.  Navigate to 'Theme picker' and select a theme which is not editable
+2.  Save and ensure you can preview the course
+
+9 - Custom LESS overrides the editable theme
+---------------------
+
+Tests to make sure the custom LESS field takes priority over the editable themes variables
+
+### Test steps
+
+1.  Navigate to 'Theme picker' and select a theme which is editable
+2.  Change some variables such as colours, which are likely to be styled by LESS
+3.  Save and navigate to custom LESS in project settings
+4.  IN the custom LESS/CSS field enter the following:
+.menu {
+    .menu-header {
+    background-color: #0000ff;        
+   }
+}
+
+.page {
+    background-color: #ffff00;
+}
+
+5. The colours should have overwritten non-editable variables from the theme
+6. Go back into the Theme picker and hover over the tooltip for one of the variables, make a note of its name
+7. Navigate back to the custom LESS/CSS and change it by entering the following
+
+.[name-of-variable] {
+  background-color: #00ffff;
+  color: #ff00ff;
+}
+
+### Expected result
+
+Any LESS entered in the custom LESS/CSS box in project settings will always override the themes variables
