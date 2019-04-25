@@ -1,7 +1,7 @@
 Editable Themes
 ===============================
 
-**Number of test cases:** 8
+**Number of test cases:** 9
 
 1 - User is able to use theme variables
 -----------------------------------
@@ -134,25 +134,12 @@ Tests to make sure the custom LESS field takes priority over the editable themes
 
 ### Test steps
 
-1.  Navigate to 'Theme picker' and select a theme which is editable
+1.  Navigate to 'Theme picker' and select an editable theme
 2.  Change some variables such as colours, which are likely to be styled by LESS
-3.  Save and navigate to custom LESS in project settings
-4.  IN the custom LESS/CSS field enter the following:
-.menu {
-    .menu-header {
-    background-color: #0000ff;        
-   }
-}
-
-.page {
-    background-color: #ffff00;
-}
-
-5. The colours should have overwritten non-editable variables from the theme
-6. Go back into the Theme picker and hover over the tooltip for one of the variables, make a note of its name
-7. Navigate back to the custom LESS/CSS and change it by entering the following
-
-@[name-of-var]: #ff00ff;
+3.  Hover over the tooltip for one of the variables, make a note of its name
+4.  Save and navigate to custom LESS in project settings
+5.  Use this field to change the value of the variable you made note of
+6.  Save and preview the course
 
 ### Expected result
 
