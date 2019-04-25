@@ -144,3 +144,4 @@ Tests to make sure the custom LESS field takes priority over the editable themes
 ### Expected result
 
 Any LESS entered in the custom LESS/CSS box in project settings will always override the themes variables, both editable and non-editable.
+
